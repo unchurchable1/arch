@@ -56,7 +56,7 @@ grub-install /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
 
 # root password
-printf "password\n" | passwd
+printf "root:password\n" | chpasswd
 
 # quit
 EOF
